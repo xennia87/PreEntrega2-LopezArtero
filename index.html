@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guarde-can home</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="material-symbols-outlined">pets</span>
+            <span class="fs-4">Guarde-can</span>
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Sobre nosotros</a></li>
+        </ul>
+    </header>
+    <!-- Visualizador resultados -->
+    <div id="confirmacion"></div>
+    <div id="resultado"></div>
+    <div id="listado_clientes"></div>
+    <div id="total_clientes"></div>
+
+    <!-- Hero -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="banner.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                    height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">¡Un segundo hogar para tus amigos peludos!
+                </h1>
+                <p class="lead">En nuestra guardería canina y felina, sabemos que tus mascotas son más que solo
+                    animales;
+                    son parte de tu familia. Aquí, ofrecemos un cálido y seguro refugio para tus amigos peludos cuando
+                    no puedes
+                    estar con ellos. Nuestro equipo de cuidadores apasionados se asegurará de que tu perro o gato reciba
+                    el amor,
+                    la atención y el juego que merecen.
+                    ¡Confía en nosotros para cuidar a tus fieles compañeros mientras estás lejos!</p>
+                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" id="nuevo_registro">Comenzar registro</button>
+              <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom">Nuestros servicios</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <span class="material-symbols-outlined">person_add</span>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">¡Registra a tu mascota ahora! </h3>
+                    <p>Haz clic en este botón para comenzar el proceso de registro y
+                        brindarle a tu mascota la experiencia más acogedora en nuestra guardería canina y felina.
+                        Tu amigo peludo merece lo mejor, ¡y estamos aquí para ofrecérselo!</p>
+                    <a href="#" class="btn btn-primary" id="nuevo_registro">
+                        Comenzar registro
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <span class="material-symbols-outlined">app_registration</span>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">Clientes registrados</h3>
+                    <p>Aquí podrás ver <strong>en la consola del navegador</strong> los clientes registrados actualmente
+                        en la guardería</p>
+                    <a href="#" class="btn btn-primary" id="mostrar_clientes">
+                        Ver clientes registrados
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <span class="material-symbols-outlined">person_search</span>
+                </div>
+                <div>
+                    <h3 class="fs-2 text-body-emphasis">¿Estoy registrado?</h3>
+                    <p>Comprueba si tu mascota está registrada ya con el siguiente botón</p>
+                    <a href="#" class="btn btn-primary" id="buscar_cliente">
+                        Comprobar registro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <span class="material-symbols-outlined">pets</span>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Guarde-can S.L.<span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter-x"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+    </footer>
+
+    <!-- Diseño antigüo
+    <div class="page_container">
+        <div class="header">
+            <div class="title">Bienvenidos a guarde-can</div>
+            <div class="subtitle">Tu guardería canina de confianza</div>
+        </div>
+        <div class="body">
+            <div class="disclaimer">Pulsa el botón para comenzar el registro de tu mascota:</div>
+            <button type="submit" id="nuevo_registro">Comenzar</button>
+            <div class="disclaimer">Pulsa el botón para ver los clientes registrados:</div>
+            <button type="submit" id="mostrar_clientes">Ver clientes</button>
+            <div class="disclaimer">¿Está mi mascota registrada?</div>
+            <button type="submit" id="buscar_cliente">Búscar por nombre</button>
+        </div>
+    </div> -->
+    <script src="/main.js" defer></script>
+</body>
+
+</html>
